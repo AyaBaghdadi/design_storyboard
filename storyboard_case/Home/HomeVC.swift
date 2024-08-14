@@ -21,8 +21,25 @@ class HomeVC: UIViewController {
         
         self.AssignXIB()
         
+        // For Make Action after time
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5, execute: {
+
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let vc = storyboard.instantiateViewController(withIdentifier: "CouponOfferVC")
+            vc.view.backgroundColor = UIColor.black.withAlphaComponent(0.6)
+
+            // For Appear as a sub View
+            UIView.transition(with: self.view, duration: 0.50, options: [.transitionCrossDissolve], animations: {
+                self.addChild(vc)
+                self.view.addSubview(vc.view)
+            }, completion: nil)
+            
+            
+        })
+        
     }
 
+    
 
 }
 

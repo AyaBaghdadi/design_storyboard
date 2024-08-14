@@ -17,6 +17,12 @@
 		BA225B5B2C15A52E00FAD6F5 /* BoardCollections.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA225B5A2C15A52E00FAD6F5 /* BoardCollections.swift */; };
 		BA225B5D2C15A68D00FAD6F5 /* Board.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA225B5C2C15A68D00FAD6F5 /* Board.xib */; };
 		BA225B612C15C04100FAD6F5 /* BoardCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA225B602C15C04100FAD6F5 /* BoardCVC.swift */; };
+		BA386F892C3D2E0D00FDEFF0 /* SideMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA386F882C3D2E0D00FDEFF0 /* SideMenuVC.swift */; };
+		BA386F8B2C3D2E4700FDEFF0 /* SideMenuCollections.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA386F8A2C3D2E4700FDEFF0 /* SideMenuCollections.swift */; };
+		BA386F8D2C3D2EA600FDEFF0 /* SideMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA386F8C2C3D2EA600FDEFF0 /* SideMenu.xib */; };
+		BA386F912C3D30F100FDEFF0 /* SideMenuCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA386F902C3D30F100FDEFF0 /* SideMenuCVC.swift */; };
+		BA7BEEFA2C352ED800858367 /* CouponOfferVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7BEEF92C352ED800858367 /* CouponOfferVC.swift */; };
+		BAE813932C6CBD590074C362 /* SideMenuClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE813922C6CBD590074C362 /* SideMenuClass.swift */; };
 		BAED73192C305DB100B68AE0 /* HomeCollections.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAED73182C305DB100B68AE0 /* HomeCollections.swift */; };
 		BAED731B2C305E2600B68AE0 /* Category.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAED731A2C305E2600B68AE0 /* Category.xib */; };
 		BAED731D2C3060E000B68AE0 /* CategorySecond.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAED731C2C3060E000B68AE0 /* CategorySecond.xib */; };
@@ -40,6 +46,12 @@
 		BA225B5A2C15A52E00FAD6F5 /* BoardCollections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardCollections.swift; sourceTree = "<group>"; };
 		BA225B5C2C15A68D00FAD6F5 /* Board.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Board.xib; sourceTree = "<group>"; };
 		BA225B602C15C04100FAD6F5 /* BoardCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardCVC.swift; sourceTree = "<group>"; };
+		BA386F882C3D2E0D00FDEFF0 /* SideMenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuVC.swift; sourceTree = "<group>"; };
+		BA386F8A2C3D2E4700FDEFF0 /* SideMenuCollections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuCollections.swift; sourceTree = "<group>"; };
+		BA386F8C2C3D2EA600FDEFF0 /* SideMenu.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SideMenu.xib; sourceTree = "<group>"; };
+		BA386F902C3D30F100FDEFF0 /* SideMenuCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuCVC.swift; sourceTree = "<group>"; };
+		BA7BEEF92C352ED800858367 /* CouponOfferVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponOfferVC.swift; sourceTree = "<group>"; };
+		BAE813922C6CBD590074C362 /* SideMenuClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuClass.swift; sourceTree = "<group>"; };
 		BAED73182C305DB100B68AE0 /* HomeCollections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollections.swift; sourceTree = "<group>"; };
 		BAED731A2C305E2600B68AE0 /* Category.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Category.xib; sourceTree = "<group>"; };
 		BAED731C2C3060E000B68AE0 /* CategorySecond.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategorySecond.xib; sourceTree = "<group>"; };
@@ -98,6 +110,8 @@
 		BA225B422C15921800FAD6F5 /* storyboard_case */ = {
 			isa = PBXGroup;
 			children = (
+				BA386F872C3D2DF400FDEFF0 /* Sidemenu */,
+				BA7BEEF82C352EC200858367 /* CouponOffer */,
 				BAED73172C305D5B00B68AE0 /* Home */,
 				BA225B572C15A4C700FAD6F5 /* Board */,
 				BA225B432C15921800FAD6F5 /* AppDelegate.swift */,
@@ -119,6 +133,26 @@
 				BA225B602C15C04100FAD6F5 /* BoardCVC.swift */,
 			);
 			path = Board;
+			sourceTree = "<group>";
+		};
+		BA386F872C3D2DF400FDEFF0 /* Sidemenu */ = {
+			isa = PBXGroup;
+			children = (
+				BA386F882C3D2E0D00FDEFF0 /* SideMenuVC.swift */,
+				BA386F8A2C3D2E4700FDEFF0 /* SideMenuCollections.swift */,
+				BA386F8C2C3D2EA600FDEFF0 /* SideMenu.xib */,
+				BA386F902C3D30F100FDEFF0 /* SideMenuCVC.swift */,
+				BAE813922C6CBD590074C362 /* SideMenuClass.swift */,
+			);
+			path = Sidemenu;
+			sourceTree = "<group>";
+		};
+		BA7BEEF82C352EC200858367 /* CouponOffer */ = {
+			isa = PBXGroup;
+			children = (
+				BA7BEEF92C352ED800858367 /* CouponOfferVC.swift */,
+			);
+			path = CouponOffer;
 			sourceTree = "<group>";
 		};
 		BAED73172C305D5B00B68AE0 /* Home */ = {
@@ -197,6 +231,7 @@
 				BA225B4D2C15921B00FAD6F5 /* Assets.xcassets in Resources */,
 				BAED731F2C3063E200B68AE0 /* CategoryThird.xib in Resources */,
 				BAED731D2C3060E000B68AE0 /* CategorySecond.xib in Resources */,
+				BA386F8D2C3D2EA600FDEFF0 /* SideMenu.xib in Resources */,
 				BA225B502C15921B00FAD6F5 /* Base in Resources */,
 				BAED731B2C305E2600B68AE0 /* Category.xib in Resources */,
 				BA225B5D2C15A68D00FAD6F5 /* Board.xib in Resources */,
@@ -257,9 +292,14 @@
 				BA225B482C15921800FAD6F5 /* HomeVC.swift in Sources */,
 				BA225B592C15A4E200FAD6F5 /* BoardVC.swift in Sources */,
 				BA225B5B2C15A52E00FAD6F5 /* BoardCollections.swift in Sources */,
+				BA386F912C3D30F100FDEFF0 /* SideMenuCVC.swift in Sources */,
+				BA386F8B2C3D2E4700FDEFF0 /* SideMenuCollections.swift in Sources */,
 				BA225B612C15C04100FAD6F5 /* BoardCVC.swift in Sources */,
 				BA225B442C15921800FAD6F5 /* AppDelegate.swift in Sources */,
+				BA386F892C3D2E0D00FDEFF0 /* SideMenuVC.swift in Sources */,
+				BA7BEEFA2C352ED800858367 /* CouponOfferVC.swift in Sources */,
 				BAED73192C305DB100B68AE0 /* HomeCollections.swift in Sources */,
+				BAE813932C6CBD590074C362 /* SideMenuClass.swift in Sources */,
 				BA225B462C15921800FAD6F5 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
