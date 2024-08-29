@@ -21,6 +21,11 @@
 		BA386F8B2C3D2E4700FDEFF0 /* SideMenuCollections.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA386F8A2C3D2E4700FDEFF0 /* SideMenuCollections.swift */; };
 		BA386F8D2C3D2EA600FDEFF0 /* SideMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA386F8C2C3D2EA600FDEFF0 /* SideMenu.xib */; };
 		BA386F912C3D30F100FDEFF0 /* SideMenuCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA386F902C3D30F100FDEFF0 /* SideMenuCVC.swift */; };
+		BA40BBD82C804C660013E0A3 /* AddressVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA40BBD72C804C660013E0A3 /* AddressVC.swift */; };
+		BA40BBDA2C805EC60013E0A3 /* Address.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA40BBD92C805EC60013E0A3 /* Address.xib */; };
+		BA40BBDC2C805EEF0013E0A3 /* AddressCollections.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA40BBDB2C805EEF0013E0A3 /* AddressCollections.swift */; };
+		BA40BBDE2C8064910013E0A3 /* AddressCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA40BBDD2C8064910013E0A3 /* AddressCVC.swift */; };
+		BA40BBE12C8075C60013E0A3 /* BackClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA40BBE02C8075C60013E0A3 /* BackClass.swift */; };
 		BA7BEEFA2C352ED800858367 /* CouponOfferVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7BEEF92C352ED800858367 /* CouponOfferVC.swift */; };
 		BAE813932C6CBD590074C362 /* SideMenuClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE813922C6CBD590074C362 /* SideMenuClass.swift */; };
 		BAED73192C305DB100B68AE0 /* HomeCollections.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAED73182C305DB100B68AE0 /* HomeCollections.swift */; };
@@ -50,6 +55,11 @@
 		BA386F8A2C3D2E4700FDEFF0 /* SideMenuCollections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuCollections.swift; sourceTree = "<group>"; };
 		BA386F8C2C3D2EA600FDEFF0 /* SideMenu.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SideMenu.xib; sourceTree = "<group>"; };
 		BA386F902C3D30F100FDEFF0 /* SideMenuCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuCVC.swift; sourceTree = "<group>"; };
+		BA40BBD72C804C660013E0A3 /* AddressVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressVC.swift; sourceTree = "<group>"; };
+		BA40BBD92C805EC60013E0A3 /* Address.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Address.xib; sourceTree = "<group>"; };
+		BA40BBDB2C805EEF0013E0A3 /* AddressCollections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressCollections.swift; sourceTree = "<group>"; };
+		BA40BBDD2C8064910013E0A3 /* AddressCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressCVC.swift; sourceTree = "<group>"; };
+		BA40BBE02C8075C60013E0A3 /* BackClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackClass.swift; sourceTree = "<group>"; };
 		BA7BEEF92C352ED800858367 /* CouponOfferVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponOfferVC.swift; sourceTree = "<group>"; };
 		BAE813922C6CBD590074C362 /* SideMenuClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuClass.swift; sourceTree = "<group>"; };
 		BAED73182C305DB100B68AE0 /* HomeCollections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollections.swift; sourceTree = "<group>"; };
@@ -110,6 +120,8 @@
 		BA225B422C15921800FAD6F5 /* storyboard_case */ = {
 			isa = PBXGroup;
 			children = (
+				BA40BBDF2C8075B60013E0A3 /* Shared */,
+				BA40BBD62C804C500013E0A3 /* Address */,
 				BA386F872C3D2DF400FDEFF0 /* Sidemenu */,
 				BA7BEEF82C352EC200858367 /* CouponOffer */,
 				BAED73172C305D5B00B68AE0 /* Home */,
@@ -145,6 +157,25 @@
 				BAE813922C6CBD590074C362 /* SideMenuClass.swift */,
 			);
 			path = Sidemenu;
+			sourceTree = "<group>";
+		};
+		BA40BBD62C804C500013E0A3 /* Address */ = {
+			isa = PBXGroup;
+			children = (
+				BA40BBD72C804C660013E0A3 /* AddressVC.swift */,
+				BA40BBDB2C805EEF0013E0A3 /* AddressCollections.swift */,
+				BA40BBD92C805EC60013E0A3 /* Address.xib */,
+				BA40BBDD2C8064910013E0A3 /* AddressCVC.swift */,
+			);
+			path = Address;
+			sourceTree = "<group>";
+		};
+		BA40BBDF2C8075B60013E0A3 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				BA40BBE02C8075C60013E0A3 /* BackClass.swift */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 		BA7BEEF82C352EC200858367 /* CouponOffer */ = {
@@ -234,6 +265,7 @@
 				BA386F8D2C3D2EA600FDEFF0 /* SideMenu.xib in Resources */,
 				BA225B502C15921B00FAD6F5 /* Base in Resources */,
 				BAED731B2C305E2600B68AE0 /* Category.xib in Resources */,
+				BA40BBDA2C805EC60013E0A3 /* Address.xib in Resources */,
 				BA225B5D2C15A68D00FAD6F5 /* Board.xib in Resources */,
 				BAED73212C3065D000B68AE0 /* Resturant.xib in Resources */,
 				BA225B4B2C15921800FAD6F5 /* Base in Resources */,
@@ -290,14 +322,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA225B482C15921800FAD6F5 /* HomeVC.swift in Sources */,
+				BA40BBE12C8075C60013E0A3 /* BackClass.swift in Sources */,
 				BA225B592C15A4E200FAD6F5 /* BoardVC.swift in Sources */,
 				BA225B5B2C15A52E00FAD6F5 /* BoardCollections.swift in Sources */,
 				BA386F912C3D30F100FDEFF0 /* SideMenuCVC.swift in Sources */,
 				BA386F8B2C3D2E4700FDEFF0 /* SideMenuCollections.swift in Sources */,
 				BA225B612C15C04100FAD6F5 /* BoardCVC.swift in Sources */,
 				BA225B442C15921800FAD6F5 /* AppDelegate.swift in Sources */,
+				BA40BBD82C804C660013E0A3 /* AddressVC.swift in Sources */,
+				BA40BBDC2C805EEF0013E0A3 /* AddressCollections.swift in Sources */,
 				BA386F892C3D2E0D00FDEFF0 /* SideMenuVC.swift in Sources */,
 				BA7BEEFA2C352ED800858367 /* CouponOfferVC.swift in Sources */,
+				BA40BBDE2C8064910013E0A3 /* AddressCVC.swift in Sources */,
 				BAED73192C305DB100B68AE0 /* HomeCollections.swift in Sources */,
 				BAE813932C6CBD590074C362 /* SideMenuClass.swift in Sources */,
 				BA225B462C15921800FAD6F5 /* SceneDelegate.swift in Sources */,

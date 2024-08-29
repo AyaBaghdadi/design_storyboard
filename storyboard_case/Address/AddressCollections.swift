@@ -7,7 +7,7 @@
 
 import UIKit
 
-extension SideMenuVC :  UICollectionViewDataSource , UICollectionViewDelegate , UICollectionViewDelegateFlowLayout {
+extension AddressVC :  UICollectionViewDataSource , UICollectionViewDelegate , UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
@@ -17,34 +17,22 @@ extension SideMenuVC :  UICollectionViewDataSource , UICollectionViewDelegate , 
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! SideMenuCVC
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! AddressCVC
             
         cell.titleCell.text = self.myResult?[indexPath.row].0
         
-        cell.imgCell.image = UIImage(named: "\(self.myResult?[indexPath.row].1 ?? "")")
-        
+        cell.desCell.text = self.myResult?[indexPath.row].1
+
         return cell
  
     }
     
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-
-        if indexPath.row == 3 {
-                 
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let VC = storyboard.instantiateViewController(withIdentifier: "AddressVC") as! AddressVC
-            VC.modalPresentationStyle = .fullScreen
-            self.present(VC, animated: true)
-            
-        }
-        
-    }
-    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        
 
             let itemWidth = collectionView.bounds.width
                         
-            return CGSize(width: itemWidth, height: 50)
+            return CGSize(width: itemWidth, height: 200)
         
     }
     
@@ -56,7 +44,8 @@ extension SideMenuVC :  UICollectionViewDataSource , UICollectionViewDelegate , 
     
     func AssignXIB() {
                         
-        collectionView.register(UINib(nibName: "SideMenu", bundle: nil), forCellWithReuseIdentifier: "cell")
+        collectionView.register(UINib(nibName: "Address", bundle: nil), forCellWithReuseIdentifier: "cell")
 
     }
+    
 }
